@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+Explanation of the Structure
+public/
+index.html: The single HTML file that serves the React app.
+favicon.ico: The favicon for the app.
+manifest.json: Configuration file for Progressive Web App (PWA) settings.
+src/
+assets/: This folder contains static assets like images, fonts, etc.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+images/: Stores image files used in the application.
+components/: Contains reusable React components.
 
-## Available Scripts
+Layout/: Components for the app layout like Header, Footer, and Sidebar.
+Post/: Components related to displaying posts like Post, PostList, and PostDetail.
+Search/: Components for the search functionality, including SearchBar and SearchResults.
+common/: Common, reusable components like buttons, spinners, etc.
+features/: This folder holds Redux slices and related files for different features.
 
-In the project directory, you can run:
+posts/: Contains Redux slice for handling posts, including postsSlice.js and postsAPI.js.
+search/: Contains Redux slice for search functionality.
+ui/: UI-related Redux slice, which could manage state like modals, notifications, etc.
+app/: This folder holds the core of your React and Redux application.
 
-### `npm start`
+store.js: Configures the Redux store.
+rootReducer.js: Combines all the Redux slices.
+App.js: The main component of the app.
+index.js: The entry point of the app, where React renders the application.
+styles/: Contains global styles, CSS variables, and general styling files.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+variables.css: CSS variables for consistent theming across the app.
+global.css: Global styles applied throughout the application.
+utils/: Utility functions and helpers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+api.js: API configuration and helper functions.
+constants.js: Constants used across the application.
+helpers.js: General helper functions.
+tests/: Contains test files for components and Redux slices.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+setupTests.js: Configures testing environment, e.g., for Jest or Enzyme.
+App.test.js: Tests related to the App.js component.
+components/: Tests for individual components.
+features/: Tests for Redux slices.
+Root Files:
+.gitignore: Specifies files and folders to be ignored by Git.
+package.json: Lists dependencies and scripts.
+README.md: Project documentation.
+babel.config.js: Babel configuration for transpiling JavaScript.
